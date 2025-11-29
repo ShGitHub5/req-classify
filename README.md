@@ -129,7 +129,7 @@ git push -u origin main
 
 Your repository link (FQDN) for slides:
 ```
-https://github.com/<your-username>/<repo-name>
+https://github.com/ShGitHub5/req-classify
 ```
 
 ---
