@@ -61,7 +61,7 @@ python myaihonors.py
 ```
 Capture the output to a file (optional):
 ```bash
-python myaihonors.py > output_requirements.md
+python myaihonors.py > sample_output.md
 ```
 
 See **`sample_output.md`** for a full example of the request and response that this project produced.
