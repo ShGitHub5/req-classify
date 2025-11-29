@@ -1,0 +1,75 @@
+# Sample Request & Response
+
+This file captures the **exact prompt (request)** you used and the **full response** returned by the API.
+
+## 🔸 Request (Messages)
+```python
+messages = [
+    {"role": "system", "content": "You are a helpful assistant who writes complete, structured requirements. Always provide full sections: Functional, Non-Functional, and Compliance. Use clear headings, numbered lists, and avoid truncation."},
+    {"role": "user", "content": "I have requirements of MDM(master data management). I have 3 entities used in the MDM. There are 2 data sources from where we load the data to the entities of MDM. Before loading data to MDM, the data is converted to JSON format and the JSON is then loaded into MDM. Then the attribute mapping and data quality check is done inside the MDM. The 3 entities which are used are HCO(Health care organization), HCP (Health care profession) & CLINICAL STUDY. There are match and merge as well as survivorship rules which are considered to get a concrete Operation value(golden record). This golden record is then dumped into the snowflake database from where it can be used for further use. I want to create requirements and classify them as functional, non-functional and compliance category."}
+]
+```
+
+## 🔹 Response (from API)
+
+# Master Data Management (MDM) System Requirements
+
+## 1. Functional Requirements
+
+### 1.1 Data Ingestion
+1.1.1 The system shall support data ingestion from two distinct data sources.
+1.1.2 The system shall convert incoming data into JSON format before loading it into the MDM system.
+
+### 1.2 Entity Management
+1.2.1 The system shall manage three primary entities: Health Care Organization (HCO), Health Care Professional (HCP), and Clinical Study.
+1.2.2 The system shall allow for the creation, update, and deletion of records within each entity.
+
+### 1.3 Data Quality and Transformation
+1.3.1 The system shall perform attribute mapping for each entity to ensure data consistency.
+1.3.2 The system shall conduct data quality checks to validate the accuracy and completeness of the data before processing.
+
+### 1.4 Match and Merge
+1.4.1 The system shall implement match and merge rules to identify and consolidate duplicate records within each entity.
+1.4.2 The system shall apply survivorship rules to determine the most accurate and reliable data for creating a golden record.
+
+### 1.5 Golden Record Management
+1.5.1 The system shall generate a golden record for each entity based on the match, merge, and survivorship processes.
+1.5.2 The system shall store the golden records in a Snowflake database for further use.
+
+### 1.6 Data Export
+1.6.1 The system shall export the golden records to the Snowflake database in a structured format.
+
+## 2. Non-Functional Requirements
+
+### 2.1 Performance
+2.1.1 The system shall process and load data into the MDM system within a maximum of 2 hours from ingestion.
+2.1.2 The system shall support concurrent processing of data from both data sources without performance degradation.
+
+### 2.2 Scalability
+2.2.1 The system shall be scalable to accommodate an increase in data volume by at least 50% annually.
+
+### 2.3 Reliability
+2.3.1 The system shall have an uptime of 99.9% to ensure continuous availability for data processing and access.
+
+### 2.4 Security
+2.4.1 The system shall ensure data encryption during transmission and storage to protect sensitive information.
+2.4.2 The system shall implement role-based access control to restrict access to authorized users only.
+
+### 2.5 Usability
+2.5.1 The system shall provide a user-friendly interface for managing entities and monitoring data processing activities.
+
+## 3. Compliance Requirements
+
+### 3.1 Data Protection
+3.1.1 The system shall comply with relevant data protection regulations, such as GDPR and HIPAA, to ensure the privacy and security of personal data.
+
+### 3.2 Audit and Logging
+3.2.1 The system shall maintain detailed logs of all data processing activities, including data ingestion, transformation, and export, for audit purposes.
+3.2.2 The system shall provide audit trails that can be reviewed by authorized personnel to ensure compliance with regulatory requirements.
+
+### 3.3 Data Retention
+3.3.1 The system shall implement data retention policies that comply with legal and regulatory requirements for data storage and deletion.
+
+These requirements provide a comprehensive framework for the development and implementation of the MDM system, ensuring it meets functional, non-functional, and compliance needs.
+
+
