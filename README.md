@@ -46,7 +46,7 @@ pip install openai python-dotenv
 ---
 
 ## 🔐 Environment Variables (.env)
-Create a `.env` file in the project root (same folder as `myaihonors.py`). **Do not** commit real secrets.
+Create a `.env` file in the project root (same folder as `myaihonors.py`). Real data like openAI endpoint/secret key is not disclosed below due to security reasons.
 
 ```env
 OPENAI_API_VERSION=2024-02-01
