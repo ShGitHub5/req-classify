@@ -104,7 +104,7 @@ print(res.choices[0].message.content)
 ## 🔎 Troubleshooting
 - **ModuleNotFoundError: openai** → `pip install openai python-dotenv`.
 - **Truncated output** → Increase `max_tokens` (e.g., 2000+), reduce penalties.
-- **401/403** → Verify API key, endpoint, and deployment name.
+- **401/403** → Verify API key, endpoint.
 - **Env not loading** → `.env` must be in the same directory, and `load_dotenv()` must be called.
 - **Interpreter mismatch** → Confirm VS Code interpreter (Python 3.12).
 
