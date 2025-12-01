@@ -15,10 +15,17 @@ Generate structured **Functional**, **Non-Functional**, and **Compliance** requi
 
 ## 📁 Project Structure
 ```
-.
-├── myaihonors.py        # Python script that calls Azure OpenAI
-├── .env                 # Environment variables 
-├── sample_output.md     # Full example: request & response from API
+myaihonors/
+│
+├── myaihonors.py        # Main script
+├── upload1.txt          # Example input file
+├── upload2.txt          # Example input file
+├── empty.txt            # Example empty file for negative test
+├── Hello_yellow.png     # Example unsupported file for negative test
+├── sample_output1.md    # Generated output for option1
+├── sample_output2.md    # Generated output for option2
+├── sample_output3.md    # Generated output for option3
+└── .env                 # Environment variables
 └── README.md            # This documentation
 ```
 
