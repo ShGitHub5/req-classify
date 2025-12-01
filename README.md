@@ -32,9 +32,12 @@ myaihonors/
 ---
 
 ## 🚀 Features
-- Generates complete requirement sets for MDM (Functional / Non-Functional / Compliance).
-- Covers entities **HCO**, **HCP**, **Clinical Study** and key processes (JSON normalization, DQ, match & merge, survivorship, golden record, Snowflake export).
-- Tuned parameters to reduce truncation.
+✅ Accepts manual text input or file uploads
+✅ Handles multiple documents and merges content
+✅ Detects empty files and shows error
+✅ Rejects unsupported file types (.png, .jpg, .pdf, etc.)
+✅ Adds clarification notes for ambiguous requirements
+✅ Saves API response to different output files based on user option
 
 ---
 
