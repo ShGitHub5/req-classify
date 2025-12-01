@@ -76,12 +76,34 @@ Run the script:
 ```bash
 python myaihonors.py
 ```
-Capture the output to a file (optional):
-```bash
-python myaihonors.py > sample_output.md
-```
-
-See **`sample_output.md`** for a full example of the request and response that this project produced.
+Example Cases
+Case 1: Manual Text Input
+process_inputs(
+    text_input="I have requirements of MDM(master data management)...",
+    options="option1"
+)
+✅ Output saved to sample_output1.md
+Case 2: Single File Upload
+process_inputs(
+    file_names=["upload1.txt"],
+    options="option2"
+)
+✅ Output saved to sample_output2.md
+Case 3: Multiple Files
+process_inputs(
+    file_names=["upload1.txt", "upload2.txt"],
+    options="option3"
+)
+✅ Output saved to sample_output3.md
+Dynamic Output File Logic
+options="option1" → sample_output1.md
+options="option2" → sample_output2.md
+options="option3" → sample_output3.md
+Else → sample_output_default.md
+Error Handling
+Empty file → Logs error: Invalid input: file is empty
+Unsupported file type → Logs error: Unsupported file type
+Ambiguous requirements → Adds note: Needs clarification
 
 ---
 
