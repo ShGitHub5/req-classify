@@ -2,7 +2,13 @@
 Azure OpenAI-based solution for automated requirement classification(Functional, Non-Functional, Compliance)
 
 # Azure OpenAI MDM Requirements Generator
-Generate structured **Functional**, **Non-Functional**, and **Compliance** requirements for a Master Data Management (MDM) solution using **Azure OpenAI**.
+Generate structured **Functional**, **Non-Functional**, and **Compliance** requirements for a Master Data Management (MDM) solution using **Azure OpenAI**. It supports:
+Manual text input
+Single or multiple file uploads (.txt format)
+Dynamic output file saving based on user options
+Validation for empty files and unsupported file types
+Ambiguity detection in requirements (flags unclear items as “Needs clarification”)
+
 
 ---
 
